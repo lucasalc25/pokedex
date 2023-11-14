@@ -7,9 +7,30 @@
     padding: 1rem;
 }
 
+@media screen and (min-width: 600px) {
+    .content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .content {
         max-width: 992px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content {
+        max-width: 1200px;
         margin: 0 auto;
     }
 }
@@ -29,9 +50,27 @@
     justify-content: space-around;
 }
 
+@media screen and (min-width: 600px) {
+    .pokemons {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pokemons {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .pokemons {
-        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .pokemons {
+        grid-template-columns: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%;
     }
 }
 
@@ -49,10 +88,17 @@
     background: #49d0b0;
 }
 
-#charmander {
-    background: #ff7755;
+#charmander,
+#charmeleon,
+#charizard {
+    background: #ff886a;
 }
 
+#squirtle,
+#warturtle,
+#blastoise {
+    background: #886aff;
+}
 .pokemon .name {
     font-size: .825rem;
 } 
@@ -92,6 +138,10 @@
 
 .types #fire {
     background-color: #FF4422;
+}
+
+.types #water {
+    background-color: #4422ff;
 }
 
 .pokemon .detail {
